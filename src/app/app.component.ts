@@ -34,7 +34,7 @@ export class AppComponent {
     this.todoDataService.deleteTodoById(todo.id);
   }
 
-  getTodos() {
+  get todos() {
     return this.todoDataService.getAllTodos();
   }
 
