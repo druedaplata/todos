@@ -26,11 +26,11 @@ export class AppComponent {
   }
 
   // Service is now available as this.todoDataService
-  toggleTodoComplete(todo) {
+  onToggleTodoComplete(todo: Todo) {
     this.todoDataService.toggleTodoComplete(todo);
   }
 
-  removeTodo(todo) {
+  onRemoveTodo(todo: Todo) {
     this.todoDataService.deleteTodoById(todo.id);
   }
 
