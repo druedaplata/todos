@@ -20,9 +20,9 @@ export class AppComponent {
 
   }
 
-  addTodo() {
-    this.todoDataService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
+  // Add new method to handle event emitted by TodoListHeaderComponent
+  onAddTodo(todo: Todo) {
+    this.todoDataService.addTodo(todo);
   }
 
   // Service is now available as this.todoDataService
